@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <table border="1" width="40%" align="center">
+        <tr>
+            <td align="right" colspan="3">
+                <a href="#pizza">Pizza delivery form</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div onmouseover = "over()">
+                <h1>Reservation Request</h1>
+            </div>
+        </tr>
+        <tr> 
+            <td colspan="3" valign="top"> 
+                <form action="">
+                    <input type = "button" onclick = "sayHello()" value = "Say Hello" >
+                    <fieldset>
+                        <legend>
+                            General info
+                        </legend>
+                        <label for="arival date">Arival Date</label>
+                        <input type="date" pattern="(0[1-9]|1[1-9]|2[1-9]|3[01].(0[1-9]|1[012]).0[0-9]{4}"><br>
+                        <label for="arival date" >Nights</label>
+                        <input type="number"><br>
+                        <label for="Adults">Aduls</label>
+                        <select name="adults" id="adults">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                         <br>
+                         <label for="children">Children: </label>
+                         <select name="children" id="children">
+                             <option value="1">0</option>
+                             <option value="2">1</option>
+                             <option value="3">2</option>
+                         </select></fieldset>
+                        <fieldset> <legend>
+                            preferences
+                        </legend>
+                        <label>Room Type:</label>
+                        <input type="radio" checked> 
+                        <label for="Standard">Standard</label>
+                        <input type="radio"> 
+                        <label for="business">business</label>
+                        <input type="radio"> 
+                        <label for="suite">Suite</label><br>
+                        <label>Bed type:</label>
+                        <input type="radio" checked> 
+                        <label for="Standard">King</label>
+                        <input type="radio"> 
+                        <label for="business">double double</label><br>
+                        <input type="checkbox">
+                        <label for="smoking">Smoking</label>
+                    </fieldset>
+                    <fieldset> <legend>
+                        contact info
+                    </legend>
+                    <label for="name" id="Input" value="abel">Name:</label>
+                    <input type="text" id="name" required><br> 
+                    <label for="email">Email:</label>
+                    <input type="email" pattern="[a-z0-9.%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> <br>
+                    <label for="tel">Phone:</label>
+                    <input type="tel" pattern="[0-9]{10}"> 
+                </fieldset>
+                <button type="submit" onclick="Funct()">submit Reservation</button>
+                <button type="reset">clear</button>
+                </form>
+            </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="3">
+                    <h2 id="pizza">Pizza Delivery</h2>
+                    <h3>online order form</h3>
+                </td>
+            </tr>
+            <tr>
+            <td colspan="3">
+                <form action="">
+                        <label for="name">*Name</label>
+                        <button onclick="func()">click</button>
+                        <p id="name"> </p>
+
+                             <input type="text" required> <label for="tel">*Tel</label> <input type="tel" required><br>
+                        <label for="address">*Address</label>
+                            <input type="text" required>  <label for="email">*Email</label><input type="email" required><br>
+                        <label for="Town city">*Town city</label>
+                        <input type="text" required> <br>
+                        <label for="pass">*Passcode</label>
+                            <input type="password" required><br>
+                </fieldset>
+           
+                
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="3">
+               *required fields
+            </td>
+    </tr>
+         <tr>
+             <td>
+                <fieldset>
+                    <legend>
+                        Topping
+                    </legend>
+                    <input type="radio">
+                    <label for="Margherita">Margherita</label><br>
+                    <input type="radio">
+                    <label for="foursea">four seasons</label><br>
+                    <input type="radio">
+                    <label for="mest">meat feast</label>
+                    </fieldset>
+             </td>
+             <td>
+                <fieldset>
+                    <legend>
+                        Size
+                    </legend>
+                    <input type="radio">
+                    <label for="small">small</label><br>
+                    <input type="radio">
+                    <label for="medium">medium</label><br>
+                    <input type="radio">
+                    <label for="large">large</label>
+                    </fieldset>
+             </td>
+             <td>
+                <fieldset>
+                    <legend>
+                        Size
+                    </legend>
+                    <input type="checkbox">
+                    <label for="Mushrooms">Mushrooms</label><br>
+                    <input type="checkbox">
+                    <label for="greenpeppers">Green peppers</label><br>
+                    <input type="checkbox">
+                    <label for="anch">Anchovies</label><br>
+                    <input type="checkbox">
+                    <label for="Excheese">Extra cheese</label>
+                    </fieldset>
+             </td>
+         </tr>
+         <tr>
+             <td colspan="3" align="center">
+                <label for="preftime"> preferred delivery time:</label> 
+                <input type="time"><br>
+                <label for="preftime"> Delivery instructions:</label> 
+                <textarea name="" id="" cols="20" rows="3"></textarea><br>
+                <button type="submit" >submit order</button>
+
+             </td>
+         </tr>
+    </table>
+    
+        
+    <script src="../../resources/js.js.js">
+
+    </script>
+</body>
+</html>

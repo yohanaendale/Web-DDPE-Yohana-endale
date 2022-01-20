@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Job Application</title>
+</head>
+<body>
+    <table width="40%"  align="center">
+        <tr>
+            <td>
+                <h1>Job Application</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="">
+                    <fieldset>
+                        <legend>Application Information</legend>
+                        <label for="position">Position Applied For: </label>
+                        <input type="text" id="pos"  onkeypress="func()" autofocus>
+                        <br>
+                        <label for="name" >Name: </label>
+                        <button onclick="name1()">add name</button>
+                        
+                        <br>
+                        <label for="nation">Nationality: </label>
+                        <input type="text" id="nation">
+                        <br>
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob">
+                        <br>
+                        <label for="address">Address</label>
+                        <textarea name="Address" id="add" cols="25" rows="4"></textarea>
+                        <br>
+                        <label for="tel">Telephone Number: </label>
+                        <input type="tel" id="tel" required>
+                        <br>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" required>
+                        <br>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="">
+                    <fieldset>
+                        <legend>Educational History</legend>
+                        <label for="education">Educational History and Qualification</label>
+                        <textarea name="Education" id="edu" cols="20" rows="5"></textarea>
+                        <br>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="">
+                    <fieldset>
+                        <legend>Work Experience</legend>
+                        <label for="employer">Training in terms Employer History: </label>
+                        <textarea name="emp" id="emp" cols="20" rows="5"></textarea>
+                        <br>
+                        <label for="noy">Years of Experience: </label>
+                        <input type="range" name="exp" id="exp" value="1" step="1" min="0" max="10"  oninput="myFunction(this.value)">
+                        <p id="demo"></p>
+                        <output name="result" for="exp"></output>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="">
+                    <fieldset>
+                        <legend>Personal Statement</legend>
+                    <label for="personal">Personal Statement</label>
+                    <textarea name="personal" id="ps" cols="20" rows="5"></textarea>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="">
+                    <fieldset>
+                        <legend>Referees</legend>
+                        <fieldset>
+                            <legend>Referee</legend>
+                            <label for="rename">Name: </label>
+                            <input type="text" id="r1name">
+                            <br>
+                            <label for="reocupation">Occupation: </label>
+                            <input type="text" id="r1ocu">
+                            <br>
+                            <label for="rerelation">Relationship: </label>
+                            <input type="text" id="r1rel">
+                            <br>
+                            <label for="retel">Telephone: </label>
+                            <input type="text" id="r1tel">
+                            <br>
+                            <label for="readdress">Address: </label>
+                            <textarea name="address" id="readd" cols="20" rows="4"></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Referee +</legend>
+                            <label for="re1name">Name: </label>
+                            <input type="text" id="r2name">
+                            <br>
+                            <label for="re1ocupation">Occupation: </label>
+                            <input type="text" id="r2ocu">
+                            <br>
+                            <label for="re1relation">Relationship: </label>
+                            <input type="text" id="r2rel">
+                            <br>
+                            <label for="re1tel">Telephone: </label>
+                            <input type="text" id="r2tel">
+                            <br>
+                            <label for="re2add">Address: </label>
+                            <textarea name="address" id="re1add" cols="20" rows="4"></textarea>
+                        </fieldset>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <script>
+                                 
+function name1() {
+let x = prompt("Please enter your name");
+if (x != null) {
+document.getElementById("name").innerHTML = "Hello " + x + "welcome to ";
+        }
+      }
+function myFunction(val) {
+  document.getElementById("demo").innerHTML = val; 
+
+}
+function func() {
+  alert("You pressed a key inside the input field");
+}
+    </script>
+</body>
+</html>
